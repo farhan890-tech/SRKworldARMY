@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Ensure the body and html elements cover the full viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ background-image: url("https://wallpapers.com/images/featured/shah-rukh-khan-yne47u3t8q5vyosp.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Base styles for all screen sizes */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Use height: 100vh for full viewport height */
+  width: 100vw; /* Use width: 100vw for full viewport width */
+  overflow: hidden; /* Prevents scrolling */
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("https://wallpapers.com/images/featured/shah-rukh-khan-yne47u3t8q5vyosp.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+  text-align: center;
+}
+
+/* Typography and headings */
+.title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  line-height: 1.2;
+}
+
+.count {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.fans-text {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 400;
+  display: block;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+
+/* Button styles */
+.button {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  background: linear-gradient(45deg, #e63946, #c2185b);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.button:hover:not(.disabled) {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button.disabled {
+  background: #aaa;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Animation for the star icon */
+.star-icon {
+  animation: pulse 1.5s infinite ease-in-out;
+  display: inline-block;
+}
+
+/* Keyframe animation definition */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive adjustments for smaller screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+  
+  .count {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    margin-bottom: 0.5rem;
+  }
+  
+  .fans-text {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    margin-top: 0.25rem;
+  }
+  
+  .button {
+    font-size: clamp(1rem, 3.5vw, 1.2rem);
+    padding: 12px 24px;
+    margin-top: 1.5rem;
+  }
+}

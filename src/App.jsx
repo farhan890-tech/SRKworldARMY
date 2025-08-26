@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import myPhoto from "./assets/PHOTO.JPG";
+import myPhoto from "./assets/photo.jpg";
 
 function App() {
   const [fanCount, setFanCount] = useState(1000);

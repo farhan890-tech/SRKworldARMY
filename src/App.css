@@ -146,37 +146,4 @@ html, body {
   0%   { transform: translateY(0) scale(1); opacity: 1; }
   50%  { opacity: 0.7; }
   100% { transform: translateY(-800px) scale(1.5); opacity: 0; }
-}.music-controls {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.music-button {
-  background: linear-gradient(45deg, #ff416c, #ff4b2b);
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 16px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.music-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
-}
-
-.music-button.stop {
-  background: linear-gradient(45deg, #1e3c72, #2a5298);
-}
-
-.music-button.mute {
-  background: linear-gradient(45deg, #11998e, #38ef7d);
 }
